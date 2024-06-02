@@ -1,5 +1,7 @@
 ---
-
+import NavMenu from "../components/NavMenu.astro";
+import HeroPage from "../components/HeroPage.astro";
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -10,7 +12,10 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-black text-lg text-white">
+		<div id="app" class="relative">
+			<NavMenu />
+			<HeroPage />
+		</div>
 	</body>
 </html>
